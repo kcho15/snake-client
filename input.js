@@ -1,3 +1,4 @@
+// Stores the active TCP connection object
 let connection;
 
 const setupInput = (conn) => {
@@ -25,7 +26,7 @@ const setupInput = (conn) => {
       }
   
       if (key === 'r'){
-        connection.write('Say: Lets Go!')
+        connection.write('Say: AAHHHH')
       }
     };
   
@@ -42,6 +43,6 @@ const setupInput = (conn) => {
 };
 
 
-  setupInput();
+  // setupInput();
 
-  module.exports = setupInput; 
+  module.exports = { setupInput }; 

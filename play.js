@@ -1,9 +1,9 @@
-const connect = require("./client")
-const setupInput = require("./input")
-
-console.log("Connecting ...");
+const { connect } = require("./client")
+const { setupInput } = require("./input")
 const connection = connect();
 
+console.log("Connecting ...");
+// Start game 
 // setup interface to handle user input from stdin
 setupInput(connection); 
 
